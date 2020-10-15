@@ -18,8 +18,6 @@
 _______[_][_]______[_][_]______[_][_]____________|__[_][_]____
 ```
 
-Git is a fantastic versioning system, and there are *tons* of resources available online to help you learn / practice. This page will just cover the basics to get you on your feet, and is by no means a full list of all the amazing things Git and GitHub allow you to do. 
-
 # The Big Picture
 
 ## Git 
@@ -92,6 +90,7 @@ At any point, use `git --help` or `git <command> --help` to pull up help pages (
 1. Let's start by **navigating** to your node directory:
      * Open the bash shell of your choice (For MacOS: use `Terminal` — For Windows: use `Git Bash`)
      * Using bash commands, `cd` into your directory for node (use `mkdir` to make a directory if needed)
+     * Make sure there's at least one file in this directory
 
 2. **Initialize** the repository with `git init`:
      * This creates a hidden `.git` directory, which we can now reveal with `ls -la`
@@ -102,8 +101,8 @@ At any point, use `git --help` or `git <command> --help` to pull up help pages (
      * **Committed** means that the snapshot, containing only the staged edits, is now saved to the repo.
      ![Source: Git SCM](../screenshots/staging.png)
 
-4. **Commit** these changes to the *local* repo using `git commit -m "First commit"` 
-     * Good practice for naming commits are short statements with a verb up front
+4. **Commit** these changes to the *local* repo using `git commit -m "Initial Commit"` 
+     * Good practice for naming commits are short statements with a verb up front, i.e. "Add thing x"
 
 5. In order to push our changes up to a remote repository, we first need to **create a GitHub repo**
      * Open up `GitHub Desktop`. On the top left, hit `Add` > `Add existing repository`
