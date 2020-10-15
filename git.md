@@ -49,7 +49,7 @@ Endor, temperate, forests, 30 million
 
 Each one of these snapshots are saved in sequence, so Git allows us to see *versions over time*, then *go back to previous ones* with ease.
 
-![Versioning](../screenshots/git-basics.png)
+![Versioning](screenshots/git-basics.png)
 
 
 In fact, every time a file in our project changes at all, git recognizes and remembers the change. That information gets stored into a hidden git "database", also known as a **git repository**.
@@ -75,7 +75,7 @@ All our friend has to do is **clone**, or download a copy of the remote repo to 
 
 Whenever she's made edits that she'd like to share, she can **push** those commits from (her) local to the remote repo. To bring her changes into my local repo, I can **pull** her commits down.
 
-![Source: Git-It](../screenshots/remotes.png)
+![Source: Git-It](screenshots/remotes.png)
 
 That's it! There's a lot more to Git, including Branching and Pull Requests, but this is enough to get us started.
 
@@ -87,9 +87,9 @@ We've already covered most, if not all of the basics of working with Git. Let's 
 At any point, use `git --help` or `git <command> --help` to pull up help pages (Type `q` if you see a `:` in the command line to exit the help pages).
 
 ## Set Up Remote
-1. Let's start by **navigating** to your node directory:
+1. Let's start by **navigating** to a directory of your choice:
      * Open the bash shell of your choice (For MacOS: use `Terminal` — For Windows: use `Git Bash`)
-     * Using bash commands, `cd` into your directory for node (use `mkdir` to make a directory if needed)
+     * Using bash commands, `cd` into your directory (use `mkdir` to make a directory if needed)
      * Make sure there's at least one file in this directory
 
 2. **Initialize** the repository with `git init`:
@@ -99,7 +99,7 @@ At any point, use `git --help` or `git <command> --help` to pull up help pages (
      * **Modified** means that the file is changed, but isn't yet *saved to the repo*. This occurs by default. These changes as saved in the *working directory*.
      * **Staged** means we've *marked the modified file* *as ready* to enter into the next commit. We would say that these edits are saved to the *index*.
      * **Committed** means that the snapshot, containing only the staged edits, is now saved to the repo.
-     ![Source: Git SCM](../screenshots/staging.png)
+     ![Source: Git SCM](screenshots/staging.png)
 
 4. **Commit** these changes to the *local* repo using `git commit -m "Initial Commit"` 
      * Good practice for naming commits are short statements with a verb up front, i.e. "Add thing x"
@@ -110,7 +110,7 @@ At any point, use `git --help` or `git <command> --help` to pull up help pages (
      * Click `Publish repository`, add a description and make the repo public if you'd like, then publish. Make it private for now
 
 6. Now that we have a `remote` repo set up, we can confirm its location using `git remote -v`
-     * This should now point to a link, something like <https://github.com/ishaandey/node.git>
+     * This should now point to a link, something like <https://github.com/ishaandey/git-crash-courses.git>
 
 7. **Push** the commits to remote using `git push`
 
